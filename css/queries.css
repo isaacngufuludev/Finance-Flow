@@ -1,0 +1,414 @@
+@media (max-width: 62em) {
+  .operations {
+    gap: 3rem;
+    /* justify-content: center; */
+  }
+
+  .cta {
+    padding: 2rem 4rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 57em) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  .cta {
+    padding: 2rem 2.4rem;
+    gap: 2.4rem;
+  }
+  .input-info {
+    width: 90%;
+  }
+  .expenses-info,
+  .expenses-row {
+    gap: 5rem;
+  }
+  .app__name,
+  .greet-user {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .header {
+    padding-inline: 2.4rem;
+  }
+  .boxes {
+    padding: 1.4rem 1rem;
+  }
+  .expenses-info,
+  .expenses-row {
+    gap: 2.2rem;
+  }
+  .input-info {
+    padding: 0.3rem 0.2rem;
+  }
+  .add {
+    padding: 1.4rem 0.8rem;
+  }
+  .title {
+    height: 19rem;
+  }
+  .op__value {
+    font-size: 2rem;
+  }
+  .login-sentence,
+  .app-login-name {
+    font-size: 1.8rem;
+  }
+  .calculator-login {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .login_container {
+    padding: 4.4rem;
+  }
+  .login-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 44em) {
+  .login_container {
+    max-width: 45rem;
+  }
+}
+@media (max-width: 47em) {
+  .val {
+    width: 19rem;
+  }
+  .des {
+    width: 20rem;
+  }
+  .op__flex {
+    gap: 7.5rem;
+  }
+}
+
+@media (max-width: 41em) {
+  html {
+    font-size: 56.25%;
+  }
+  .op__value {
+    font-size: 2rem;
+  }
+  .container {
+    padding: 0 3.2rem;
+  }
+  .operations {
+    gap: 2rem;
+  }
+  .title {
+    height: 19rem;
+  }
+  .cta {
+    padding: 1.8rem 2rem;
+    gap: 1.8rem;
+  }
+  .add {
+    padding: 1.2rem 0.6rem;
+    font-size: 1rem;
+  }
+  .input-info {
+    padding: 0 0.2rem;
+  }
+  .expenses-info,
+  .expenses-row {
+    gap: 1.2rem;
+  }
+  .logout-box {
+    padding: 0.3rem 0.8rem;
+  }
+  .header {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .check {
+    gap: 0.7rem;
+  }
+  .op__name {
+    font-size: 1.6rem;
+  }
+  .boxes {
+    padding: 1rem;
+  }
+  .des {
+    width: 20rem;
+  }
+  .val {
+    width: 19rem;
+  }
+  .ti {
+    width: 21rem;
+  }
+  .container {
+    padding: 0 2.4rem;
+  }
+  .operations {
+    overflow-x: scroll;
+  }
+  .title {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 38em) {
+  .cta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn {
+    justify-self: center;
+    width: 100%;
+  }
+  .form-boxes {
+    width: 100%;
+  }
+  .input-info {
+    padding: 0.7rem 0.5rem;
+  }
+  .add {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+  .cta label {
+    font-size: 1.4rem;
+  }
+  .boxes {
+    padding: 2rem 3.2rem;
+    width: 100%;
+  }
+  .title {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .greet-user {
+    display: none;
+  }
+  .expenses-box,
+  .form-box {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .input-info {
+    padding: 0.5rem 0.5rem;
+  }
+  .add {
+    padding: 1rem 1.2rem;
+  }
+  .val,
+  .des {
+    width: 17rem;
+  }
+  .delete {
+    justify-self: right;
+  }
+  .login_container {
+    padding: 4.4rem 4rem;
+  }
+  .label_box {
+    margin-bottom: 0.7rem;
+  }
+  .login-sentence {
+    display: none;
+    font-size: 2rem;
+  }
+  .header-login {
+    display: block;
+    padding-top: 3rem;
+  }
+  .calculator-login {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 32em) {
+  /* .title {
+  } */
+  .logout-box p {
+    display: none;
+  }
+  .boxes {
+    padding: 1.8rem 3.2rem;
+  }
+  .val {
+    width: 15rem;
+  }
+  /* .title {
+    height: 19rem;
+  } */
+  .add {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .expenses-info {
+    display: none;
+  }
+  .expenses-row {
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.174);
+    margin-bottom: 2rem;
+    padding: 3rem 3rem 3rem 2rem;
+    border-radius: 0.5rem;
+  }
+  .delete {
+    justify-self: left;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .input-info {
+    width: 100%;
+  }
+  .cta {
+    /* padding: 2.4rem 2rem; */
+    /* gap: 1.8rem; */
+    position: absolute;
+    /* top: 10%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #fff;
+    width: 30rem;
+    padding: 2.4rem 3.2rem;
+    height: 30rem;
+    border-radius: 0.9rem;
+  }
+  .cta label,
+  .cta span {
+    font-size: 1.8rem;
+  }
+  .expenses-box,
+  .form-box {
+    width: 60%;
+    /* display: none; */
+  }
+  .expenses-box {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  .des,
+  .val,
+  .tip {
+    width: 0;
+    font-size: 1.8rem;
+  }
+  .delete {
+    justify-self: right;
+    font-size: 1.8rem;
+  }
+  .val {
+    justify-self: center;
+    margin-right: 2rem;
+  }
+  .delete {
+    justify-self: center;
+  }
+  .op__name {
+    font-size: 1.8rem;
+  }
+
+  .in,
+  .out {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .form-box {
+    display: none;
+  }
+  .add__btn-box {
+    display: block;
+  }
+  .login-title {
+    font-size: 2.4rem;
+  }
+  .login-box label {
+    font-size: 1.4rem;
+  }
+  .login_container {
+    max-width: 40rem;
+    padding: 4rem 3.6rem;
+    margin: 2.4rem auto;
+  }
+  .header-login {
+    padding: 3rem 2rem;
+  }
+  .input-info {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media (max-width: 27em) {
+  .in,
+  .out {
+    width: 2rem;
+    height: 2rem;
+  }
+  .des,
+  .val,
+  .tip,
+  .delete {
+    font-size: 1.6rem;
+  }
+  .expenses-box,
+  .form-box {
+    width: 70%;
+  }
+  .btn_delete-expense {
+    padding: 0.7rem 1.6rem;
+  }
+}
+@media (max-width: 25em) {
+  .login_container {
+    max-width: 35rem;
+    padding: 3rem 2.6rem;
+    margin: 2rem auto;
+  }
+
+  .delete-box {
+    max-width: 25rem;
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 22em) {
+  .input-info {
+    padding: 0.3rem 0.5rem;
+  }
+  .expenses-box,
+  .form-box {
+    width: 80%;
+  }
+  .btn-add-mobile {
+    right: 6px;
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .header-login {
+    padding: 3rem 1.6rem;
+  }
+  .login_container {
+    max-width: 33rem;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 21em) {
+  .login_container {
+    max-width: 31rem;
+    padding: 3rem 2rem;
+  }
+  .cta {
+    height: 26rem;
+    width: 27rem;
+    padding-left: 2rem 3rem;
+  }
+}

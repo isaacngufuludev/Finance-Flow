@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINANCE-FLOW</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="js/class.js"></script>
+    <!-- <script defer src="js/script.js"></script> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <section class="app-container hidden">
+      <div class="title">
+        <header class="header app__name-container">
+          <p class="greet-user">Bem vindo de volta, kkk</p>
+          <p class="app__name">Finance-Flow APP</p>
+          <button class="logout-box">
+            <p>Terminar Sessão</p>
+            <ion-icon class="log-out" name="log-out-outline"></ion-icon>
+          </button>
+        </header>
+        <div class="operations container">
+          <div class="boxes">
+            <div class="op__flex">
+              <p class="op__name">Entradas</p>
+              <ion-icon
+                class="op__icon"
+                name="arrow-up-circle-outline"
+              ></ion-icon>
+            </div>
+            <p class="op__value op__in">R$ 1700.00</p>
+          </div>
+          <div class="boxes">
+            <div class="op__flex">
+              <p class="op__name">Saídas</p>
+              <ion-icon
+                class="op__icon"
+                name="arrow-down-circle-outline"
+              ></ion-icon>
+            </div>
+            <p class="op__value op__out">R$ 700.00</p>
+          </div>
+          <div class="boxes">
+            <div class="op__flex">
+              <p class="op__name">Total</p>
+              <p class="op__name">$</p>
+            </div>
+            <p class="op__value op__tot">R$ 1000.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="form-box">
+          <div class="cta">
+            <div class="form-boxes">
+              <label for="">Descrição</label>
+              <input type="text" class="input-info expense_name" />
+            </div>
+            <div class="form-boxes">
+              <label for="">Valor</label>
+              <input type="text" class="input-info expense_value" />
+            </div>
+            <div class="form-boxes">
+                <label for="">Tipo</label>
+                <select name="" class="form__input form__input--type">
+                  <option value="entrada">Entrada</option>
+                  <option value="saida">Saida</option>
+                </select>
+            </div>
+            <div class="form-boxes btn">
+              <button class="add">adicionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box-2 hidden">
+          <div class="cta">
+            <div class="form-boxes">
+              <label for="">Descrição</label>
+              <input type="text" class="input-info expense_name-2" />
+            </div>
+            <div class="form-boxes">
+              <label for="">Valor</label>
+              <input
+                type="text"
+                class="input-info expense_value-2"
+              />
+            </div>
+            <div class="form-boxes">
+              <label for="">Tipo</label>
+              <select name="" class="form__input form__input--type-2">
+                <option value="entrada">Entrada</option>
+                <option value="saida">Saida</option>
+              </select>
+            </div>
+            <div class="form-boxes btn">
+              <button class="add add-2">adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="expenses-box">
+          <div class="expenses-info hidden">
+            <span class="des">Descrição</span>
+            <span class="val">Valor</span>
+            <span class="ti">Tipo</span>
+          </div>
+          <div class="expenses-rows-box">
+            <div class="expenses-row">
+              <span class="des">Salário</span>
+              <span class="val in">+1500</span>
+              <span class="tip"
+                ><ion-icon
+                  class="expense__icon in"
+                  name="arrow-up-circle-outline"
+                ></ion-icon
+              ></span>
+              <button class="delete">
+                <ion-icon class="remove" name="trash"></ion-icon>
+              </button>
+            </div>
+            <div class="expenses-row">
+              <span class="des">Aluguel</span>
+              <span class="val out">-550</span>
+              <span class="tip">
+                <ion-icon
+                  class="expense__icon out"
+                  name="arrow-down-circle-outline"
+                ></ion-icon
+              ></span>
+              <button class="delete">
+                <ion-icon class="remove" name="trash"></ion-icon>
+              </button>
+            </div>
+            <div class="expenses-row">
+              <span class="des">Extra</span>
+              <span class="val in">+200</span>
+              <span class="tip"
+                ><ion-icon
+                  class="expense__icon in"
+                  name="arrow-up-circle-outline"
+                ></ion-icon
+              ></span>
+              <button class="delete">
+                <ion-icon class="remove" name="trash"></ion-icon>
+              </button>
+            </div>
+            <div class="expenses-row">
+              <span class="des">Alimentação</span>
+              <span class="val out">-150</span>
+              <span class="tip"
+                ><ion-icon
+                  class="expense__icon out"
+                  name="arrow-down-circle-outline"
+                ></ion-icon
+              ></span>
+              <button class="delete">
+                <ion-icon class="remove" name="trash"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="add__btn-box hidden">
+        <button class="btn-add-mobile">+</button>
+      </div>
+    </section>
+
+    <!-- login -->
+    <section class="login login_start ">
+      <header class="header-login">
+        <p class="login-sentence">Inicie sessão para começar</p>
+        <div class="app-login-name">
+          <ion-icon
+            class="calculator-login"
+            name="calculator-outline"
+          ></ion-icon>
+          <p>finance flow app</p>
+        </div>
+      </header>
+      <div class="login_container">
+        <form class="login-box">
+          <h2 class="login-title">Login</h2>
+          <div class="label_box">
+            <label for="user-login">nome do usuario</label>
+            <ion-icon class="login-icon" name="person-outline"></ion-icon>
+          </div>
+          <input
+            type="text"
+            placeholder=""
+            id="user-login"
+            class="user-input"
+          />
+
+          <div class="input-login-box">
+            <div class="label_box">
+              <label for="password-login">senha</label>
+              <ion-icon
+                class="login-icon"
+                name="lock-closed-outline"
+              ></ion-icon>
+            </div>
+
+            <input
+              type="password"
+              id="password-login"
+              class="password-input"
+              maxlength="4"
+            />
+
+            <button class="btn-see-password login-see">
+              <ion-icon
+                name="eye-off-outline"
+                class="login-icon eye-off-outline "
+              ></ion-icon>
+              <ion-icon
+                name="eye-outline"
+                class="login-icon eye-outline hidden"
+              ></ion-icon>
+            </button>
+          </div>
+
+          <button class="btn-login">Iniciar Sessão</button>
+          <p class="create-acc-text">
+            <span>Não tem uma conta?</span>&nbsp;<a href="" class="login-acc"
+              >criar conta</a
+            >
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- create -->
+    <section class="login login_create hidden">
+      <header class="header-login">
+        <p class="login-sentence">Inicie sessão para começar</p>
+        <div class="app-login-name">
+          <ion-icon
+            class="calculator-login"
+            name="calculator-outline"
+          ></ion-icon>
+          <p>finance flow app</p>
+        </div>
+      </header>
+      <div class="login_container">
+        <form class="login-box">
+          <h2 class="login-title">Criar Conta</h2>
+          <div class="label_box">
+            <label for="user-fullname">nome completo</label>
+            <ion-icon class="login-icon" name="wallet-outline"></ion-icon>
+          </div>
+          <input
+            type="text"
+            placeholder=""
+            id="user-fullname"
+            class="input-create-name"
+          />
+          <div class="label_box">
+            <label for="user">nome do usuario</label>
+            <ion-icon class="login-icon" name="person-outline"></ion-icon>
+          </div>
+          <input
+            type="text"
+            placeholder=""
+            id="user"
+            class="input-create-user"
+          />
+
+          <div class="input-create-box">
+            <div class="label_box">
+              <label for="password">senha</label>
+              <ion-icon
+                class="login-icon"
+                name="lock-closed-outline"
+              ></ion-icon>
+            </div>
+            <input
+              type="password"
+              id="password"
+              class="password-create"
+              maxlength="4"
+            />
+            <button class="btn-see-password create-see">
+              <ion-icon
+                name="eye-off-outline"
+                class="login-icon eye-off-outline--1 "
+              ></ion-icon>
+              <ion-icon
+                name="eye-outline"
+                class="login-icon eye-outline--1 hidden"
+              ></ion-icon>
+            </button>
+          </div>
+          <button class="btn-create">Iniciar Sessão</button>
+          <p class="create-acc-text">
+            <span>Já tem uma conta?</span>&nbsp;<a href="" class="create-acc"
+              >inicie sessão</a
+            >
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- editar -->
+    <!-- <section class="edit "> 
+      <div class="edit-box">
+        <button class="close_edit_box">&times;</button>
+        <div class="flex-edit">
+          <p class="description_edit">Computador</p>
+          <p class="edit_date">12/07/2023</p>
+        </div>
+        <p class="value_edit">10000</p>
+        <ion-icon
+          class="expense__icon out
+          icon_edit"
+          name="arrow-down-circle-outline"
+        ></ion-icon
+      ></class=>
+      <button class="edit_expense">Editar Dispesa</button>
+      </div>
+
+      <div class="edit_cta-box">
+        <button class="close_edit_box">&times;</button>
+          <h1 class="cta_heading">Editar Dispesa</h1>
+          <form action="" class="cta_edit">
+            <div class="cta_edit-box">
+              <label for="des">Descrição</label>
+              <input type="text" id="des">
+            </div>
+
+            <div class="cta_edit-box">
+              <label for="val">Valor</label>
+              <input type="text" id="val">
+            </div>
+
+            <div class="form-boxes check">
+              <div class="radio-box">
+                <button class="btn-checkbox">
+                  <span class="checkbox check_in" data-value="input"
+                    >&nbsp;</span
+                  >
+                </button>
+                <span>Entrada</span>
+              </div>
+
+              <div class="radio-box">
+                <button class="btn-checkbox">
+                  <span class="checkbox check_out" data-value="output"
+                    >&nbsp;</span
+                  >
+                </button>
+                <span>Saída</span>
+              </div>
+            </div>
+            <button class="save_edits">Salvar Alterações</button>
+          </form>
+
+      </div>
+    </section> -->
+
+    <!-- delete -->
+    <section class="del">
+      <div class="delete-box hidden">
+        <p class="question">Eliminar dispesa?</p>
+        <p class="sure">Tens a certeza que queres eliminar esta dispesa?</p>
+        <div class="btn-delete-box">
+          <button class="btn_delete-expense no">Não</button>
+          <button class="btn_delete-expense yes">Sim</button>
+        </div>
+    </section>
+    
+    </div>
+  </body>
+</html>
